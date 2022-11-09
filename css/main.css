@@ -1,12 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    counter-reset: num;
 }
 
 h1, h2, h3, h4, p {
     margin: 0;
+}
+
+picture {
+    display: inline-block;
 }
 
 .container {
@@ -26,6 +35,13 @@ h1, h2, h3, h4, p {
 .title_secondary {
     font-size: 40px;
     line-height: 58px;
+    font-weight: 600;
+    color: #373737;
+}
+
+.title_third {
+    font-size: 25px;
+    line-height: 38px;
     font-weight: 600;
     color: #373737;
 }
@@ -56,6 +72,37 @@ h1, h2, h3, h4, p {
 
 .block_bg {
     background-color: #FFF7F4;
+}
+
+.block_top {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.block_note {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FF5300;
+}
+
+.block_note:before, .block_note:after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    width: 40px;
+    height: 1px;
+    background-color: #FF5300;
+}
+
+.block_note::before {
+    left: -50px;
+}
+
+.block_note::after {
+    right: -50px;
 }
 
 .header {
@@ -99,4 +146,51 @@ h1, h2, h3, h4, p {
 .main {
     display: flex;
     align-items: center;
+}
+
+.wwd_item {
+    width: calc(100% / 3);
+    padding: 15px;
+}
+
+.wwd_box {
+    position: relative;
+    height: 100%;
+    padding: 30px 25px 0 25px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wwd_box:before {
+    counter-increment: num;
+    content: "0" counter(num);
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 64px;
+    line-height: 74px;
+    font-weight: 600;
+    color: #EFEFEF;
+}
+
+.wwd_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.wwd_type {
+    margin-bottom: 15px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #7B7B7B;
+}
+
+.wwd_picture {
+    margin-bottom: 15px;
+}
+
+.wwd_box_title {
+    margin-bottom: 5px;
 }
