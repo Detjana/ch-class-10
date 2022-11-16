@@ -88,7 +88,7 @@ picture {
     color: #FF5300;
 }
 
-.block_note:before, .block_note:after {
+.block_note_before:before, .block_note:after {
     content: '';
     position: absolute;
     top: 60%;
@@ -97,7 +97,7 @@ picture {
     background-color: #FF5300;
 }
 
-.block_note::before {
+.block_note_before::before {
     left: -50px;
 }
 
@@ -180,6 +180,7 @@ picture {
 }
 
 .wwd_type {
+    display: block;
     margin-bottom: 15px;
     font-size: 13px;
     line-height: 20px;
@@ -193,4 +194,38 @@ picture {
 
 .wwd_box_title {
     margin-bottom: 5px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+.about_ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.about_li {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #373737;
+}
+
+.about_li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_332_3326)'%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM11.003 16L18.073 8.929L16.659 7.515L11.003 13.172L8.174 10.343L6.76 11.757L11.003 16Z' fill='%23FF5300'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_332_3326'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.about_title {
+    margin-bottom: 20px;
 }
