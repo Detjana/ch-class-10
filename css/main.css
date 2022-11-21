@@ -239,11 +239,11 @@ picture {
     list-style: none;
 }
 
-.cs_list:first-child {
+.cs_list:first-child, .cs_list:hover {
     border-radius: 10px;
     background-color: #FF5300;
 }
-.cs_list:first-child .cs_link {
+.cs_list:first-child .cs_link, .cs_list:hover .cs_link {
     color: #fff;
 }
 
@@ -257,4 +257,56 @@ picture {
     color: #7B7B7B;
     text-decoration: none;
     text-align: center;
+}
+
+.cs_hover {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    bottom: 40px;
+    right: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 83, 0, .75);
+}
+
+.cs_box:hover .cs_hover {
+    display: flex;
+}
+
+.cs_boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cs_box {
+    display: inline-block;
+    position: relative;
+    width: calc(100% / 3);
+}
+
+.cs_title {
+    margin-top: 15px;
+    color: #fff;
+}
+
+.cs_picture, .cs_img {
+    width: 100%;
+    height: 100%;
+}
+
+.testimonial_name {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #FF5300;
+}
+
+.testimonial_role {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #7B7B7B;
 }
