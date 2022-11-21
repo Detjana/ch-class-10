@@ -229,3 +229,32 @@ picture {
 .about_title {
     margin-bottom: 20px;
 }
+
+.cs_ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.cs_list:first-child {
+    border-radius: 10px;
+    background-color: #FF5300;
+}
+.cs_list:first-child .cs_link {
+    color: #fff;
+}
+
+.cs_link {
+    display: inline-block;
+    min-width: 126px;
+    padding: 15px 30px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #7B7B7B;
+    text-decoration: none;
+    text-align: center;
+}
