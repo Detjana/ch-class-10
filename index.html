@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative Hub Class 10</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
 </head>
 <body>
@@ -317,41 +318,371 @@
                 <p class="block_note block_note_before">Our Testimonial</p>
                 <h2 class="title_secondary">What Our Client Saying</h2>
             </div>
-            <div>
-                <div>
-                    <div>
-                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
-                        </svg>
-                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
-                        </svg>
-                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
-                        </svg>
-                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
-                        </svg>
-                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.0401 13.8773L14.0824 15.7406L13.2552 12.2631L15.9627 9.93717L12.4095 9.65117L11.0401 6.35025V13.8773ZM11.0401 16.4166L4.69185 20.3058L6.41769 13.0474L0.769287 8.19409L8.18349 7.59825L11.0401 0.708252L13.8967 7.59825L21.312 8.19409L15.6625 13.0474L17.3883 20.3058L11.0401 16.4166Z" fill="#FF5300"/>
-                        </svg>                        
-                    </div>
-                    <p class="block_text">
-                        Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.
-                    </p>
-                    <div>
-                        <picture>
-                            <img src="./img/testimonal1.png" alt="Phillip Levin" />
-                        </picture>
-                        <h3 class="testimonial_name">Phillip Levin</h3>
-                        <p class="testimonial_role">CEO / Creative IT</p>
-                        <svg width="46" height="35" viewBox="0 0 46 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M41.5425 3.69738C44.1175 6.43238 45.5 9.49988 45.5 14.4724C45.5 23.2224 39.3575 31.0649 30.425 34.9424L28.1925 31.4974C36.53 26.9874 38.16 21.1349 38.81 17.4449C37.4675 18.1399 35.71 18.3824 33.9875 18.2224C29.4775 17.8049 25.9225 14.1024 25.9225 9.49988C25.9225 7.17924 26.8444 4.95364 28.4853 3.31269C30.1263 1.67175 32.3519 0.749878 34.6725 0.749878C37.355 0.749878 39.92 1.97488 41.5425 3.69738ZM16.5425 3.69738C19.1175 6.43238 20.5 9.49988 20.5 14.4724C20.5 23.2224 14.3575 31.0649 5.425 34.9424L3.1925 31.4974C11.53 26.9874 13.16 21.1349 13.81 17.4449C12.4675 18.1399 10.71 18.3824 8.9875 18.2224C4.4775 17.8049 0.922501 14.1024 0.922501 9.49988C0.922501 7.17924 1.84437 4.95364 3.48531 3.31269C5.12626 1.67175 7.35186 0.749878 9.6725 0.749878C12.355 0.749878 14.92 1.97488 16.5425 3.69738Z" fill="#BCC1C7"/>
-                        </svg>                        
+            <div class="testimonal_slider">
+                <div class="swiper testimonial_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonal_box">
+                                <div class="testimonal_rating">
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.0401 13.8773L14.0824 15.7406L13.2552 12.2631L15.9627 9.93717L12.4095 9.65117L11.0401 6.35025V13.8773ZM11.0401 16.4166L4.69185 20.3058L6.41769 13.0474L0.769287 8.19409L8.18349 7.59825L11.0401 0.708252L13.8967 7.59825L21.312 8.19409L15.6625 13.0474L17.3883 20.3058L11.0401 16.4166Z" fill="#FF5300"/>
+                                    </svg>                        
+                                </div>
+                                <p class="block_text">
+                                    Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.
+                                </p>
+                                <div class="testimonial_user">
+                                    <div class="testimonial_user_data">
+                                        <picture class="testimonial_picture">
+                                            <img class="testimonial_img" src="./img/testimonal1.png" alt="Phillip Levin" />
+                                        </picture>
+                                        <div>
+                                            <h3 class="testimonial_name">Phillip Levin</h3>
+                                            <p class="testimonial_role">CEO / Creative IT</p>
+                                        </div>
+                                    </div>
+                                    <svg width="46" height="35" viewBox="0 0 46 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M41.5425 3.69738C44.1175 6.43238 45.5 9.49988 45.5 14.4724C45.5 23.2224 39.3575 31.0649 30.425 34.9424L28.1925 31.4974C36.53 26.9874 38.16 21.1349 38.81 17.4449C37.4675 18.1399 35.71 18.3824 33.9875 18.2224C29.4775 17.8049 25.9225 14.1024 25.9225 9.49988C25.9225 7.17924 26.8444 4.95364 28.4853 3.31269C30.1263 1.67175 32.3519 0.749878 34.6725 0.749878C37.355 0.749878 39.92 1.97488 41.5425 3.69738ZM16.5425 3.69738C19.1175 6.43238 20.5 9.49988 20.5 14.4724C20.5 23.2224 14.3575 31.0649 5.425 34.9424L3.1925 31.4974C11.53 26.9874 13.16 21.1349 13.81 17.4449C12.4675 18.1399 10.71 18.3824 8.9875 18.2224C4.4775 17.8049 0.922501 14.1024 0.922501 9.49988C0.922501 7.17924 1.84437 4.95364 3.48531 3.31269C5.12626 1.67175 7.35186 0.749878 9.6725 0.749878C12.355 0.749878 14.92 1.97488 16.5425 3.69738Z" fill="#BCC1C7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonal_box">
+                                <div class="testimonal_rating">
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.0401 13.8773L14.0824 15.7406L13.2552 12.2631L15.9627 9.93717L12.4095 9.65117L11.0401 6.35025V13.8773ZM11.0401 16.4166L4.69185 20.3058L6.41769 13.0474L0.769287 8.19409L8.18349 7.59825L11.0401 0.708252L13.8967 7.59825L21.312 8.19409L15.6625 13.0474L17.3883 20.3058L11.0401 16.4166Z" fill="#FF5300"/>
+                                    </svg>                        
+                                </div>
+                                <p class="block_text">
+                                    Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.
+                                </p>
+                                <div class="testimonial_user">
+                                    <div class="testimonial_user_data">
+                                        <picture class="testimonial_picture">
+                                            <img class="testimonial_img" src="./img/testimonial2.png" alt="Phillip Levin" />
+                                        </picture>
+                                        <div>
+                                            <h3 class="testimonial_name">Lincoln Lipshutz</h3>
+                                            <p class="testimonial_role">CEO / Creative IT</p>
+                                        </div>
+                                    </div>
+                                    <svg width="46" height="35" viewBox="0 0 46 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M41.5425 3.69738C44.1175 6.43238 45.5 9.49988 45.5 14.4724C45.5 23.2224 39.3575 31.0649 30.425 34.9424L28.1925 31.4974C36.53 26.9874 38.16 21.1349 38.81 17.4449C37.4675 18.1399 35.71 18.3824 33.9875 18.2224C29.4775 17.8049 25.9225 14.1024 25.9225 9.49988C25.9225 7.17924 26.8444 4.95364 28.4853 3.31269C30.1263 1.67175 32.3519 0.749878 34.6725 0.749878C37.355 0.749878 39.92 1.97488 41.5425 3.69738ZM16.5425 3.69738C19.1175 6.43238 20.5 9.49988 20.5 14.4724C20.5 23.2224 14.3575 31.0649 5.425 34.9424L3.1925 31.4974C11.53 26.9874 13.16 21.1349 13.81 17.4449C12.4675 18.1399 10.71 18.3824 8.9875 18.2224C4.4775 17.8049 0.922501 14.1024 0.922501 9.49988C0.922501 7.17924 1.84437 4.95364 3.48531 3.31269C5.12626 1.67175 7.35186 0.749878 9.6725 0.749878C12.355 0.749878 14.92 1.97488 16.5425 3.69738Z" fill="#BCC1C7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonal_box">
+                                <div class="testimonal_rating">
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.0401 13.8773L14.0824 15.7406L13.2552 12.2631L15.9627 9.93717L12.4095 9.65117L11.0401 6.35025V13.8773ZM11.0401 16.4166L4.69185 20.3058L6.41769 13.0474L0.769287 8.19409L8.18349 7.59825L11.0401 0.708252L13.8967 7.59825L21.312 8.19409L15.6625 13.0474L17.3883 20.3058L11.0401 16.4166Z" fill="#FF5300"/>
+                                    </svg>                        
+                                </div>
+                                <p class="block_text">
+                                    Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.
+                                </p>
+                                <div class="testimonial_user">
+                                    <div class="testimonial_user_data">
+                                        <picture class="testimonial_picture">
+                                            <img class="testimonial_img" src="./img/testimonial3.png" alt="Phillip Levin" />
+                                        </picture>
+                                        <div>
+                                            <h3 class="testimonial_name">Craig Siphron</h3>
+                                            <p class="testimonial_role">CEO / Creative IT</p>
+                                        </div>
+                                    </div>
+                                    <svg width="46" height="35" viewBox="0 0 46 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M41.5425 3.69738C44.1175 6.43238 45.5 9.49988 45.5 14.4724C45.5 23.2224 39.3575 31.0649 30.425 34.9424L28.1925 31.4974C36.53 26.9874 38.16 21.1349 38.81 17.4449C37.4675 18.1399 35.71 18.3824 33.9875 18.2224C29.4775 17.8049 25.9225 14.1024 25.9225 9.49988C25.9225 7.17924 26.8444 4.95364 28.4853 3.31269C30.1263 1.67175 32.3519 0.749878 34.6725 0.749878C37.355 0.749878 39.92 1.97488 41.5425 3.69738ZM16.5425 3.69738C19.1175 6.43238 20.5 9.49988 20.5 14.4724C20.5 23.2224 14.3575 31.0649 5.425 34.9424L3.1925 31.4974C11.53 26.9874 13.16 21.1349 13.81 17.4449C12.4675 18.1399 10.71 18.3824 8.9875 18.2224C4.4775 17.8049 0.922501 14.1024 0.922501 9.49988C0.922501 7.17924 1.84437 4.95364 3.48531 3.31269C5.12626 1.67175 7.35186 0.749878 9.6725 0.749878C12.355 0.749878 14.92 1.97488 16.5425 3.69738Z" fill="#BCC1C7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonal_box">
+                                <div class="testimonal_rating">
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.0401 13.8773L14.0824 15.7406L13.2552 12.2631L15.9627 9.93717L12.4095 9.65117L11.0401 6.35025V13.8773ZM11.0401 16.4166L4.69185 20.3058L6.41769 13.0474L0.769287 8.19409L8.18349 7.59825L11.0401 0.708252L13.8967 7.59825L21.312 8.19409L15.6625 13.0474L17.3883 20.3058L11.0401 16.4166Z" fill="#FF5300"/>
+                                    </svg>                        
+                                </div>
+                                <p class="block_text">
+                                    Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.
+                                </p>
+                                <div class="testimonial_user">
+                                    <div class="testimonial_user_data">
+                                        <picture class="testimonial_picture">
+                                            <img class="testimonial_img" src="./img/testimonal1.png" alt="Phillip Levin" />
+                                        </picture>
+                                        <div>
+                                            <h3 class="testimonial_name">Phillip Levin</h3>
+                                            <p class="testimonial_role">CEO / Creative IT</p>
+                                        </div>
+                                    </div>
+                                    <svg width="46" height="35" viewBox="0 0 46 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M41.5425 3.69738C44.1175 6.43238 45.5 9.49988 45.5 14.4724C45.5 23.2224 39.3575 31.0649 30.425 34.9424L28.1925 31.4974C36.53 26.9874 38.16 21.1349 38.81 17.4449C37.4675 18.1399 35.71 18.3824 33.9875 18.2224C29.4775 17.8049 25.9225 14.1024 25.9225 9.49988C25.9225 7.17924 26.8444 4.95364 28.4853 3.31269C30.1263 1.67175 32.3519 0.749878 34.6725 0.749878C37.355 0.749878 39.92 1.97488 41.5425 3.69738ZM16.5425 3.69738C19.1175 6.43238 20.5 9.49988 20.5 14.4724C20.5 23.2224 14.3575 31.0649 5.425 34.9424L3.1925 31.4974C11.53 26.9874 13.16 21.1349 13.81 17.4449C12.4675 18.1399 10.71 18.3824 8.9875 18.2224C4.4775 17.8049 0.922501 14.1024 0.922501 9.49988C0.922501 7.17924 1.84437 4.95364 3.48531 3.31269C5.12626 1.67175 7.35186 0.749878 9.6725 0.749878C12.355 0.749878 14.92 1.97488 16.5425 3.69738Z" fill="#BCC1C7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonal_box">
+                                <div class="testimonal_rating">
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.0401 13.8773L14.0824 15.7406L13.2552 12.2631L15.9627 9.93717L12.4095 9.65117L11.0401 6.35025V13.8773ZM11.0401 16.4166L4.69185 20.3058L6.41769 13.0474L0.769287 8.19409L8.18349 7.59825L11.0401 0.708252L13.8967 7.59825L21.312 8.19409L15.6625 13.0474L17.3883 20.3058L11.0401 16.4166Z" fill="#FF5300"/>
+                                    </svg>                        
+                                </div>
+                                <p class="block_text">
+                                    Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.
+                                </p>
+                                <div class="testimonial_user">
+                                    <div class="testimonial_user_data">
+                                        <picture class="testimonial_picture">
+                                            <img class="testimonial_img" src="./img/testimonial2.png" alt="Phillip Levin" />
+                                        </picture>
+                                        <div>
+                                            <h3 class="testimonial_name">Lincoln Lipshutz</h3>
+                                            <p class="testimonial_role">CEO / Creative IT</p>
+                                        </div>
+                                    </div>
+                                    <svg width="46" height="35" viewBox="0 0 46 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M41.5425 3.69738C44.1175 6.43238 45.5 9.49988 45.5 14.4724C45.5 23.2224 39.3575 31.0649 30.425 34.9424L28.1925 31.4974C36.53 26.9874 38.16 21.1349 38.81 17.4449C37.4675 18.1399 35.71 18.3824 33.9875 18.2224C29.4775 17.8049 25.9225 14.1024 25.9225 9.49988C25.9225 7.17924 26.8444 4.95364 28.4853 3.31269C30.1263 1.67175 32.3519 0.749878 34.6725 0.749878C37.355 0.749878 39.92 1.97488 41.5425 3.69738ZM16.5425 3.69738C19.1175 6.43238 20.5 9.49988 20.5 14.4724C20.5 23.2224 14.3575 31.0649 5.425 34.9424L3.1925 31.4974C11.53 26.9874 13.16 21.1349 13.81 17.4449C12.4675 18.1399 10.71 18.3824 8.9875 18.2224C4.4775 17.8049 0.922501 14.1024 0.922501 9.49988C0.922501 7.17924 1.84437 4.95364 3.48531 3.31269C5.12626 1.67175 7.35186 0.749878 9.6725 0.749878C12.355 0.749878 14.92 1.97488 16.5425 3.69738Z" fill="#BCC1C7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonal_box">
+                                <div class="testimonal_rating">
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.0401 13.8773L14.0824 15.7406L13.2552 12.2631L15.9627 9.93717L12.4095 9.65117L11.0401 6.35025V13.8773ZM11.0401 16.4166L4.69185 20.3058L6.41769 13.0474L0.769287 8.19409L8.18349 7.59825L11.0401 0.708252L13.8967 7.59825L21.312 8.19409L15.6625 13.0474L17.3883 20.3058L11.0401 16.4166Z" fill="#FF5300"/>
+                                    </svg>                        
+                                </div>
+                                <p class="block_text">
+                                    Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.
+                                </p>
+                                <div class="testimonial_user">
+                                    <div class="testimonial_user_data">
+                                        <picture class="testimonial_picture">
+                                            <img class="testimonial_img" src="./img/testimonial3.png" alt="Phillip Levin" />
+                                        </picture>
+                                        <div>
+                                            <h3 class="testimonial_name">Craig Siphron</h3>
+                                            <p class="testimonial_role">CEO / Creative IT</p>
+                                        </div>
+                                    </div>
+                                    <svg width="46" height="35" viewBox="0 0 46 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M41.5425 3.69738C44.1175 6.43238 45.5 9.49988 45.5 14.4724C45.5 23.2224 39.3575 31.0649 30.425 34.9424L28.1925 31.4974C36.53 26.9874 38.16 21.1349 38.81 17.4449C37.4675 18.1399 35.71 18.3824 33.9875 18.2224C29.4775 17.8049 25.9225 14.1024 25.9225 9.49988C25.9225 7.17924 26.8444 4.95364 28.4853 3.31269C30.1263 1.67175 32.3519 0.749878 34.6725 0.749878C37.355 0.749878 39.92 1.97488 41.5425 3.69738ZM16.5425 3.69738C19.1175 6.43238 20.5 9.49988 20.5 14.4724C20.5 23.2224 14.3575 31.0649 5.425 34.9424L3.1925 31.4974C11.53 26.9874 13.16 21.1349 13.81 17.4449C12.4675 18.1399 10.71 18.3824 8.9875 18.2224C4.4775 17.8049 0.922501 14.1024 0.922501 9.49988C0.922501 7.17924 1.84437 4.95364 3.48531 3.31269C5.12626 1.67175 7.35186 0.749878 9.6725 0.749878C12.355 0.749878 14.92 1.97488 16.5425 3.69738Z" fill="#BCC1C7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonal_box">
+                                <div class="testimonal_rating">
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.0401 13.8773L14.0824 15.7406L13.2552 12.2631L15.9627 9.93717L12.4095 9.65117L11.0401 6.35025V13.8773ZM11.0401 16.4166L4.69185 20.3058L6.41769 13.0474L0.769287 8.19409L8.18349 7.59825L11.0401 0.708252L13.8967 7.59825L21.312 8.19409L15.6625 13.0474L17.3883 20.3058L11.0401 16.4166Z" fill="#FF5300"/>
+                                    </svg>                        
+                                </div>
+                                <p class="block_text">
+                                    Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.
+                                </p>
+                                <div class="testimonial_user">
+                                    <div class="testimonial_user_data">
+                                        <picture class="testimonial_picture">
+                                            <img class="testimonial_img" src="./img/testimonal1.png" alt="Phillip Levin" />
+                                        </picture>
+                                        <div>
+                                            <h3 class="testimonial_name">Phillip Levin</h3>
+                                            <p class="testimonial_role">CEO / Creative IT</p>
+                                        </div>
+                                    </div>
+                                    <svg width="46" height="35" viewBox="0 0 46 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M41.5425 3.69738C44.1175 6.43238 45.5 9.49988 45.5 14.4724C45.5 23.2224 39.3575 31.0649 30.425 34.9424L28.1925 31.4974C36.53 26.9874 38.16 21.1349 38.81 17.4449C37.4675 18.1399 35.71 18.3824 33.9875 18.2224C29.4775 17.8049 25.9225 14.1024 25.9225 9.49988C25.9225 7.17924 26.8444 4.95364 28.4853 3.31269C30.1263 1.67175 32.3519 0.749878 34.6725 0.749878C37.355 0.749878 39.92 1.97488 41.5425 3.69738ZM16.5425 3.69738C19.1175 6.43238 20.5 9.49988 20.5 14.4724C20.5 23.2224 14.3575 31.0649 5.425 34.9424L3.1925 31.4974C11.53 26.9874 13.16 21.1349 13.81 17.4449C12.4675 18.1399 10.71 18.3824 8.9875 18.2224C4.4775 17.8049 0.922501 14.1024 0.922501 9.49988C0.922501 7.17924 1.84437 4.95364 3.48531 3.31269C5.12626 1.67175 7.35186 0.749878 9.6725 0.749878C12.355 0.749878 14.92 1.97488 16.5425 3.69738Z" fill="#BCC1C7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonal_box">
+                                <div class="testimonal_rating">
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.0401 13.8773L14.0824 15.7406L13.2552 12.2631L15.9627 9.93717L12.4095 9.65117L11.0401 6.35025V13.8773ZM11.0401 16.4166L4.69185 20.3058L6.41769 13.0474L0.769287 8.19409L8.18349 7.59825L11.0401 0.708252L13.8967 7.59825L21.312 8.19409L15.6625 13.0474L17.3883 20.3058L11.0401 16.4166Z" fill="#FF5300"/>
+                                    </svg>                        
+                                </div>
+                                <p class="block_text">
+                                    Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.
+                                </p>
+                                <div class="testimonial_user">
+                                    <div class="testimonial_user_data">
+                                        <picture class="testimonial_picture">
+                                            <img class="testimonial_img" src="./img/testimonial2.png" alt="Phillip Levin" />
+                                        </picture>
+                                        <div>
+                                            <h3 class="testimonial_name">Lincoln Lipshutz</h3>
+                                            <p class="testimonial_role">CEO / Creative IT</p>
+                                        </div>
+                                    </div>
+                                    <svg width="46" height="35" viewBox="0 0 46 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M41.5425 3.69738C44.1175 6.43238 45.5 9.49988 45.5 14.4724C45.5 23.2224 39.3575 31.0649 30.425 34.9424L28.1925 31.4974C36.53 26.9874 38.16 21.1349 38.81 17.4449C37.4675 18.1399 35.71 18.3824 33.9875 18.2224C29.4775 17.8049 25.9225 14.1024 25.9225 9.49988C25.9225 7.17924 26.8444 4.95364 28.4853 3.31269C30.1263 1.67175 32.3519 0.749878 34.6725 0.749878C37.355 0.749878 39.92 1.97488 41.5425 3.69738ZM16.5425 3.69738C19.1175 6.43238 20.5 9.49988 20.5 14.4724C20.5 23.2224 14.3575 31.0649 5.425 34.9424L3.1925 31.4974C11.53 26.9874 13.16 21.1349 13.81 17.4449C12.4675 18.1399 10.71 18.3824 8.9875 18.2224C4.4775 17.8049 0.922501 14.1024 0.922501 9.49988C0.922501 7.17924 1.84437 4.95364 3.48531 3.31269C5.12626 1.67175 7.35186 0.749878 9.6725 0.749878C12.355 0.749878 14.92 1.97488 16.5425 3.69738Z" fill="#BCC1C7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonal_box">
+                                <div class="testimonal_rating">
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 16.4166L4.65181 20.3058L6.37765 13.0474L0.729248 8.19409L8.14345 7.59825L11 0.708252L13.8566 7.59825L21.2719 8.19409L15.6224 13.0474L17.3483 20.3058L11 16.4166Z" fill="#FF5300"/>
+                                    </svg>
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.0401 13.8773L14.0824 15.7406L13.2552 12.2631L15.9627 9.93717L12.4095 9.65117L11.0401 6.35025V13.8773ZM11.0401 16.4166L4.69185 20.3058L6.41769 13.0474L0.769287 8.19409L8.18349 7.59825L11.0401 0.708252L13.8967 7.59825L21.312 8.19409L15.6625 13.0474L17.3883 20.3058L11.0401 16.4166Z" fill="#FF5300"/>
+                                    </svg>                        
+                                </div>
+                                <p class="block_text">
+                                    Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ultrices blandit pelle ntesque nibh arcu elementum odio justo. Rhoncus.
+                                </p>
+                                <div class="testimonial_user">
+                                    <div class="testimonial_user_data">
+                                        <picture class="testimonial_picture">
+                                            <img class="testimonial_img" src="./img/testimonial3.png" alt="Phillip Levin" />
+                                        </picture>
+                                        <div>
+                                            <h3 class="testimonial_name">Craig Siphron</h3>
+                                            <p class="testimonial_role">CEO / Creative IT</p>
+                                        </div>
+                                    </div>
+                                    <svg width="46" height="35" viewBox="0 0 46 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M41.5425 3.69738C44.1175 6.43238 45.5 9.49988 45.5 14.4724C45.5 23.2224 39.3575 31.0649 30.425 34.9424L28.1925 31.4974C36.53 26.9874 38.16 21.1349 38.81 17.4449C37.4675 18.1399 35.71 18.3824 33.9875 18.2224C29.4775 17.8049 25.9225 14.1024 25.9225 9.49988C25.9225 7.17924 26.8444 4.95364 28.4853 3.31269C30.1263 1.67175 32.3519 0.749878 34.6725 0.749878C37.355 0.749878 39.92 1.97488 41.5425 3.69738ZM16.5425 3.69738C19.1175 6.43238 20.5 9.49988 20.5 14.4724C20.5 23.2224 14.3575 31.0649 5.425 34.9424L3.1925 31.4974C11.53 26.9874 13.16 21.1349 13.81 17.4449C12.4675 18.1399 10.71 18.3824 8.9875 18.2224C4.4775 17.8049 0.922501 14.1024 0.922501 9.49988C0.922501 7.17924 1.84437 4.95364 3.48531 3.31269C5.12626 1.67175 7.35186 0.749878 9.6725 0.749878C12.355 0.749878 14.92 1.97488 16.5425 3.69738Z" fill="#BCC1C7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".testimonial_swiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          loop: false,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+    </script>
 </body>
 </html>
