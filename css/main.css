@@ -14,6 +14,10 @@ h1, h2, h3, h4, p {
     margin: 0;
 }
 
+input:focus {
+    outline: none;
+}
+
 picture {
     display: inline-block;
 }
@@ -463,17 +467,20 @@ picture {
 
 .blog_items {
     display: flex;
+    margin: 0 -15px;
 }
 
 .blog_item {
     width: calc(100% / 3);
-    padding: 15px;
+    padding: 15px 15px 30px;
+    margin: 0 15px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .blog_item_title {
+    margin-bottom: 15px;
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
@@ -481,6 +488,7 @@ picture {
 }
 
 .blog_details {
+    margin-bottom: 18px;
     display: flex;
     align-items: center;
 }
@@ -510,4 +518,57 @@ picture {
 .blog_img {
     object-fit: cover;
     border-radius: 10px;
+}
+
+.blog_picture {
+    margin-bottom: 15px;
+}
+
+.blog_top {
+    margin-bottom: 60px;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 40px;
+    border-radius: 10px;
+    background-color: #FF5300;
+}
+
+.newsletter_note, .newsletter_title {
+    color: #fff;
+}
+
+.newsletter_note:after {
+    background-color: #fff;
+}
+
+.newsletter_form {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.newsletter_btn {
+    padding: 15px 36px;
+    border: none;
+}
+
+.newsletter_inp {
+    width: 100%;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+}
+
+.newsletter_inp::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
 }
