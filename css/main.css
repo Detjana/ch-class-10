@@ -315,6 +315,7 @@ picture {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 15px;
     background-color: rgba(255, 83, 0, .75);
 }
 
@@ -336,6 +337,7 @@ picture {
 .cs_title {
     margin-top: 15px;
     color: #fff;
+    text-align: center;
 }
 
 .cs_picture, .cs_img {
@@ -358,6 +360,7 @@ picture {
 }
 
 .testimonial_picture {
+    flex: none;
     display: inline-block;
     margin-right: 15px;
     width: 60px;
@@ -444,6 +447,7 @@ picture {
     line-height: 20px;
     font-weight: 300;
     color: #373737;
+    word-break: break-word;
 }
 
 .block_cap, .cap_items {
@@ -529,6 +533,7 @@ picture {
 
 .blog_items {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 -15px;
 }
 
@@ -748,4 +753,189 @@ picture {
     left: 0;
     background-color: #FF5300;
     border-radius: 100%;
+}
+
+/* 
+    1400px //big
+    1050px //small laptop
+    992px //mini laptop
+    767px //ipad
+    576px //phone
+    320px //min width
+*/
+
+@media (max-width: 1400px) {
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: 25px;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 25px;
+    }
+    .blog_detail {
+        line-height: 12px;
+    }
+}
+
+@media (max-width: 992px) { /* -10% */
+    .title_primary {
+        font-size: 43px;
+        line-height: 64px;
+    }
+    .title_secondary {
+        font-size: 36px;
+        line-height: 52px;
+    }
+    .title_third {
+        font-size: 23px;
+        line-height: 34px;
+    }
+
+    .wwd_box:before {
+        font-size: 57px;
+        line-height: 66px;
+    }
+
+    .cs_hover {
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+    }
+    .cs_icon {
+        width: 35px;
+        height: 35px;
+    }
+    .testimonial_quotes {
+        width: 32px;
+        height: 25px;
+        flex: none;
+    }
+
+    .cap_item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .block {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .main, .about {
+        display: block;
+    }
+    .main_left, .main_picture, .about_left, .about_picture {
+        width: 100%;
+    }
+    .main_left, .about_left {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .main_picture, .about_picture {
+        display: flex;
+        justify-content: center;
+    }
+
+    .wwd_item, .cs_box {
+        width: 50%;
+    }
+
+    .cs_boxes {
+        justify-content: center;
+    }
+    .testimonial_quotes {
+        display: none;
+    }
+
+    .cap_left, .cap_picture {
+        width: 100%;
+    }
+    .cap_picture {
+        padding-left: 0;
+    }
+    .block_cap {
+        display: block;
+    }
+    .cap_left {
+        margin-bottom: 20px;
+    }
+
+    .cap_state {
+        width: 50%;
+        padding: 0 10px;
+        margin: 20px 0;
+    }
+    .cap_state:not(:nth-child(4n)):after {
+        width: 0;
+    }
+    .cap_state:not(:nth-child(2n)):after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+    .cap_states {
+        margin-top: 60px;
+        padding: 20px 0;
+    }
+
+    .blog_items {
+        justify-content: center;
+    }
+    .blog_item {
+        width: 50%;
+    }
+}
+@media (max-width: 576px) { /* -10% */
+    .title_primary {
+        font-size: 34px;
+        line-height: 51px;
+    }
+    .title_secondary {
+        font-size: 32px;
+        line-height: 46px;
+    }
+    .title_third {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .block_note_before:before, .block_note:after {
+        top: 60%;
+        width: 25px;
+    }
+    .block_note_before::before {
+        left: -35px;
+    }
+    .block_note::after {
+        right: -35px;
+    }    
+
+    .wwd_item, .cs_box {
+        width: 100%;
+    }
+    .wwd_picture {
+        width: 60px;
+        height: 60px;
+    }
+    .wwd_box:before {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .cs_link {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .testimonial_swiper {
+        margin: 0;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev, .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        display: none;
+    }  
 }
